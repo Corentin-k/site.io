@@ -1,0 +1,20 @@
+.NotifCache{
+    display: none;
+}
+
+
+.container-notifications{
+    display: block;
+    position: fixed;
+    bottom: 10vh;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+.toast{
+    padding: 1rem;
+    margin: 0.7rem;
+   color: green;
+    border: 1px solid rgb(181, 181, 181);
+    border-left: 3px solid green;
+}

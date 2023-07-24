@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html class="html">
+  
+    <head>
+        <meta charset="utf-8">
+        <meta name="name" content="Apprendre_html">
+        <title>HTML</title>
+        
+        <link rel="stylesheet" type="text/css" href="./css/style.css">  
+        <link rel="stylesheet" type="text/css" href="./css/menu.css">  
+        <link rel="stylesheet" type="text/css" href="./css/projet.css">  
+        <link rel="stylesheet" type="text/css" href="./css/modal.css"> 
+        <link rel="stylesheet" type="text/css" href="./css/notifications.css"> 
+        <link rel="stylesheet" type="text/css" href="./css/tel.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+        
+      <style>
+        @font-face{
+          font-family: 'OriginTech';
+          src: url('./css/Transformers_Movie.ttf') format(ttf);
+          
+        }
+        
+        </style>
+    </head>
+    
+  
+<body >
+
+ 
+    <header id="header">
+        <center>
+            Mes projets
+        </center>
+    </header>
+    <div class="container hidden" >
+        <nav class="menu">
+          <div class="divBouton">
+            <div class="BoutonMenu">
+                <span >
+                  <svg  width="50" height="40">
+                    <rect width="35" height="8" fill="white" rx="5"></rect>
+                    <rect y="15" width="35" height="8" fill="white" rx="5"></rect>
+                    <rect y="30" width="35" height="8" fill="white" rx="5"></rect>
+                  </svg>
+                </span>
+              </div>
+                <div  class="BoutonQuitté" >
+                  <span >
+                    <svg width="50" height="40">
+                      <rect x="12" y="-5" width="35" height="8" fill="white" transform="rotate(45 0 0)"></rect>
+                      <rect x="-18" y="25" width="35" height="8" fill="white" transform="rotate(-45 0 0)"></rect>
+                    </svg>
+                  </span>
+                </div>
+          </div>
+            <div class="Contenu_Bouton">
+                   <br>
+                   <br>
+                   <input type="checkbox" id="Bouton_etude" onclick="APPUYER_BOUTON_ETUDE()">
+                  <label  for="Bouton_etude">Projet de cours</label>
+                  <br> 
+            
+                  <input type="checkbox"  id="Bouton_perso" onclick="APPUYER_BOUTON_PERSO()" >
+                  <label  for="Bouton_perso">Projet personnel</label>
+                  <br>
+                  <br> 
+            
+                  <input type="checkbox"  id="Bouton_trad" onclick="trad()" >
+                  <label  for="Bouton_trad">Traduction</label>
+                  <br>
+                  <br>
+                  <div class="switch">
+                    <i class="fas fa-moon"></i>
+                      <div class="btn">
+      
+                      </div>
+                 
+                  </div>
+              
+                </div>
+        </nav>
+
+       
+        
+        <div class="Projet">
+                               
+          <div  class="flip-box Projet_Etude">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <img src="./image/tetris.png"  style="width:100%;height:200%">
+              </div>
+              <div class="flip-box-back">
+                <h1 style="text-decoration:  underline;">TETRIS</h1>
+                <p>Projet  en L1</p>
+                <p>Décembre 2022</p>
+                <p>Projet réalisé dans le cadre du cours de L1 "Programmation en Python" à EFREI</p>
+                <p> Langage : Python </p>
+                <br>
+                <a href="https://github.com/Corentin-k/Tetris"class="github"  target="_blank"><img src="./image/github.png" alt="Logo GitHub" style="width: 15%;">Lien vers le projet</a> <!--Permet d'ouvrir la page dans une nouvelle page-->
+                <br>
+                <a href="#" onclick="MODAL('tetris'); return false;">Voir plus</a>
+                
+              </div>
+            </div>
+          </div>
+          <div id="tetris" class="modal" >
+            <div class="mask"></div>
+            <div class="message_modal auto">
+              <h2>TETRIS</h2>
+              <p>Le jeu consiste à placer des blocs dans une grille (carré, triangle ou losange) 
+                et créer des lignes ou des colonnes pour gagner des points. 
+                L'utilisateur doit choisir un mode de jeux parmi deux politiques, le plateau de jeu et le score s’il le souhaite.
+                Cependant cette version est moins évoluée que le jeu d’origine puisque les blocs ne tombent pas.</p>
+                <img src="./image/tetris_exemple.png">
+        
+              <a href="#" class="close">&#10006;</a>
+            </div>
+          </div>
+                                
+                                              
+          <div  class="flip-box Projet_Etude">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src="./image/LOGO_JEU.png" alt="Paris" style="width:100%;height:200%">
+                </div>
+                <div class="flip-box-back">
+                  <h1 style="text-decoration:  underline;">GigaJump</h1>
+                  <p>Projet transverse en L1</p>
+                  <p>2023</p>
+                  <p>Jeu inspiré du jeu DoodleJump</p>
+                  <p>Langage: Python</p>
+                  <br>
+                  <a href="https://github.com/Corentin-k/GigaJump"class="github"  target="_blank"><img src="./image/github.png" alt="Logo GitHub" style="width: 15%;">Lien vers le projet</a> <!--Permet d'ouvrir la page dans une nouvelle page-->
+                  <br>
+                  <a href="#" onclick="MODAL('GigaJump'); return false;">Voir plus</a>
+                
+                  </div>
+                </div>
+              </div>
+              <div id="GigaJump" class="modal" >
+                <div class="mask"></div>
+                <div class="message_modal auto">
+                  <h2>GigaJump</h2>
+                  <p>Le jeu consiste à placer des blocs dans une grille (carré, triangle ou losange) 
+                    et créer des lignes ou des colonnes pour gagner des points. 
+                    L'utilisateur doit choisir un mode de jeux parmi deux politiques, le plateau de jeu et le score s’il le souhaite.
+                    Cependant cette version est moins évoluée que le jeu d’origine puisque les blocs ne tombent pas.</p>
+                    <img src="./image/GigaJump-exemple.png">
+            
+                  <a href="#" class="close">&#10006;</a>
+                </div>
+          </div>
+                   
+                                
+                   
+
+            <div  class="flip-box Projet_perso">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <img src="./image/bot.png"  style="width:100%;height:200%">
+                  </div>
+                  <div class="flip-box-back">
+                    <h1 style="text-decoration:  underline;">BOT</h1>
+                  
+                    <p>Version Python</p>
+                    <a href="https://github.com/Corentin-k/GigaJump"class="github"  target="_blank"><img src="./image/github.png" alt="Logo GitHub" style="width: 15%;">Lien vers le projet</a>
+                    <br>
+                    <p>Version TypeScript</p>
+                    <a href="https://github.com/Corentin-k/Owl-Bot" class="github" target="_blank"><img src="./image/github.png" alt="Logo GitHub" style="width: 15%;">Lien vers le projet</a>
+                    <br>
+                    <a href="#" onclick="MODAL('bot'); return false;">Voir plus</a>
+                  
+                </div>
+              </div>
+            </div>
+            <div id="bot" class="modal">
+              <div class="mask"></div>
+              <div class="message_modal">
+                <h2>Bot</h2>
+                <p>Bot Discord permettant d'afficher le planning d'une personne à partir d'un lien vers un calendrier iCalendar. 
+                  Il existe deux versions du bot : une première en Python et une seconde en TypeScript, qui utilise Node.js. 
+                  Le code utilisé pour le bot ts a été en partie fourni par Esteban Vincent et est disponible sur GitHub à l'adresse suivante :
+                  <a href="https://github.com/Crobot-ic/WebSite"> https://github.com/Crobot-ic/WebSite</a>
+                </p>
+                <img src="./image/bot-exemple.png" style="width: 90%;">
+                <p>Le bot offre la possibilité de saisir le nom de la personne et la date pour laquelle on souhaite connaître le planning. 
+                  Par défaut, la date du jour est utilisée si aucune date n'est spécifiée.
+                </p>
+                <img src="./image/bot-démo.png" style="width: 90%;">
+                <a href="#" class="close">&#10006;</a>
+              </div>
+            </div>
+                     
+        
+            
+    
+            <div  class="flip-box Projet_Etude">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <img src="./image/dessin_vectoriel.png"  style="width:100%;height:200%">
+                  </div>
+                  <div class="flip-box-back">
+                    <h1 style="text-decoration:  underline;">Dessin Vectoriel</h1>
+                    <p>Projet de L1 à l'EFREI</p>
+                    <p>Second semestre 2023</p>
+                    <p> Projet réalisé dans le cadre du cours "Algorithme et structure de données "</p>
+                    <p>Langage: C</p>
+                        <a href="https://github.com/Corentin-k/Projet_dessin_vectoriel" class="github" target="_blank"><img src="./image/github.png" alt="Logo GitHub" style="width: 15%;">Lien vers le projet</a>
+                        <br>
+                        <a href="#" onclick="MODAL('dessin_vectoriel'); return false;">Voir plus</a>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div id="dessin_vectoriel" class="modal">
+                  <div class="mask"></div>
+                  <div class="message_modal auto">
+                    <h2>Dessin Vectoriel</h2>
+                    <p>Le but de ce projet est de développer un logiciel de dessin vectoriel fonctionnant à partir de la console. 
+                      Il permet à l'utilisateur de créer des formes graphiques en saisissant des instructions spécifiques. 
+                      Les formes disponibles incluent des cercles, des points, des lignes, des rectangles, des carrés et des polygones. </p>
+                      <img src="./image/DV-exemple.png">
+                      <br>
+                      <img src="./image/DV-démo.png" style="width: 100%;">
+                    <a href="#" class="close">&#10006;</a>
+                  </div>
+                </div>
+                         
+    
+            <div  class="flip-box Projet_perso">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <img src="./image/cplusplus.png"  style="width:100%;height:200%">
+                  </div>
+                  <div class="flip-box-back">
+                    <h1 style="text-decoration:  underline;">Apprendre C++</h1>
+                    <p>Projet personnel</p>  
+                    <p>Juin 2023</p>
+                    <a href="https://github.com/Corentin-k/ProjetCplusplus" class="github" target="_blank"><img src="./image/github.png" alt="Logo GitHub" style="width: 15%;">Lien vers le projet</a>
+                    <br>
+                    <p style="text-decoration:  underline;">Page notion : </p>
+                    <a href="https://apprendre-cplusplus.notion.site/C-7dbfef941f9548caaaad1de624d8b3ec?pvs=4" style="color:rgb(218, 9, 131);" target="_blank">apprendre-cplusplus</a>
+                    <br>
+                  
+                
+              </div>
+            </div>
+          </div>
+          <div  class="flip-box Projet_perso">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <img src="./image/mystere.png"  style="width:100%;height:200%">
+              </div>
+            
+          
+            
+          </div>
+        </div>
+      
+        </div>      
+         
+                   
+                <div style=" grid-column: 2;display: flex;
+                align-items: center;
+                justify-content: center; margin: 3%;">    
+              <svg width="50" height="50" class="inutil">
+                  
+                  <rect x="10" y="-5" width="50" height="10" fill="white" transform="rotate(45 0 0)" rx="5px"></rect>
+                  <rect x="-25" y="30" width="50" height="10" fill="white" transform="rotate(-45 0 0)"rx="5px"></rect>
+                  <rect x="3" y="-30" width="44" height="10" fill="white" transform="rotate(90 0 0)"rx="5px"></rect>
+                  <rect x="3" y="20" width="44" height="10" fill="white" transform="rotate(0 0 0)"rx="5px"></rect>
+              </svg>
+            </div>  
+                
+            <div class="NotifCache">
+            
+              <div class="container-notifications">
+                  <!-- Dans cette DIV, viendront se placer 
+                      les notifications
+                  -->
+              </div>
+          </div>
+        
+                
+        <footer>
+            Site réalisé par Corentin KERVAGORET en 2023
+        </footer>
+        <script type="text/javascript" src="./JS/javascript.js"></script>
+        <script type="text/javascript" src="./JS/trad.js"></script>
+    </body>
+</html>

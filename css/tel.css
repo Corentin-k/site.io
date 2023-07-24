@@ -1,0 +1,61 @@
+@media screen and (max-width:1000px) {
+ 
+    header{
+      
+      font-size: 500%;
+      
+     
+      padding-top: 5px;
+      
+     
+  }
+    
+  
+    .Projet {
+    
+    grid-template-columns: repeat(1, auto);
+    grid-gap: 5px;
+    
+  
+    }
+    
+    .flip-box {
+      
+      
+      width: 550px;
+      height: 350px;
+      
+     
+     
+    }
+    
+      .flip-box-back {
+       font-size: x-large;
+      }
+         
+      .modal .message_modal{
+        
+        color: green;
+       width:90% ;
+     
+      
+    }
+    .modal .message_modal p{
+	
+        color: green;
+      
+      
+      }
+    .Contenu_Bouton{
+        width: 250px;
+        display: none;
+        grid-column: 1;
+        color: white;
+        padding-bottom: 10%;
+        font-size: x-large;
+    }
+    .contenu_Bouton-cliqué{
+        display: block;
+        }
+       
+  }
