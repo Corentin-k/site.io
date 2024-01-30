@@ -1,6 +1,6 @@
 console.log('connecté'); 
 
-// Faire apparaitre le menu 
+// Fonction pour le bouton traduction
 
 const divBouton=document.querySelector('.divBouton');
   divBouton.addEventListener('click',function(){
@@ -122,11 +122,6 @@ function APPUYER_BOUTON_ETUDE(){
 
 
 
-
-
-
-
-
 function MODAL(projectId) {
   var modal = document.getElementById(projectId);
 
@@ -153,14 +148,7 @@ function MODAL(projectId) {
 
   open_mod();
 }
-function openPopup() {
-  var width = 600;
-  var height = 400;
-  var left = (window.innerWidth - width) / 2;
-  var top = (window.innerHeight - height) / 2;
 
-  window.open('URL_DE_LA_PAGE', 'Nom_de_la_fenetre', 'width=' + width + ', height=' + height + ', top=' + top + ', left=' + left);
-}
 
 
 //Changer de mode Sombre/clair

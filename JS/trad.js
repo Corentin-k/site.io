@@ -10,12 +10,12 @@ function trad(){
     Theader.innerHTML="Mes projets";
     localStorage.setItem("traduction",false);
     
-    Notif("Francais");
+
   } else {
     Bouton_trad.classList.add("clicked");
     localStorage.setItem("traduction",true);
     Theader.innerHTML="My project";
-    Notif("Anglais");
+
   }
 }
 
