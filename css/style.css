@@ -4,7 +4,7 @@
 }
 
 /* modifie l'arriere fond et la police de toute la page */
-s
+
 
 ::-webkit-scrollbar{
   width:10px;
@@ -94,7 +94,7 @@ footer{
    
     border-radius:30px;/*permet d'arrondir les bords*/
     height: 30px;
-  max-width: auto;
+
   padding: 5px;
   margin-top: 10px;
   

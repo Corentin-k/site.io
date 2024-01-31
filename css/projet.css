@@ -19,7 +19,7 @@
     padding: 50px;
     padding-bottom: 50%;
     position: relative;
-    background-color: transparent; /*pour eviter que quand l'image tourne il y est un fond*/
+    background-color: transparent; /*pour eviter que quand l'img tourne il y est un fond*/
     width: 350px;
     height: 200px;
     z-index: 1;

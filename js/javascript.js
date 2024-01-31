@@ -4,7 +4,7 @@ console.log('connecté');
 
 const divBouton=document.querySelector('.divBouton');
   divBouton.addEventListener('click',function(){
-    var contenu_Bouton = document.querySelector(".Contenu_Bouton");
+    const contenu_Bouton = document.querySelector(".Contenu_Bouton");
     contenu_Bouton.classList.toggle('contenu_Bouton-cliqué')
     document.querySelector('.BoutonQuitté').classList.toggle('BoutonQuitté-cliqué');
     document.querySelector('.BoutonMenu').classList.toggle('BoutonMenu-cliqué');
@@ -14,18 +14,20 @@ const divBouton=document.querySelector('.divBouton');
 
 function APPUYER_BOUTON_PERSO(){
   
+  let i;
+  let projetEtudeElements;
+  let Bouton_perso;
   if (document.getElementById("Bouton_etude").checked){
-    var Bouton_etude = document.getElementById("Bouton_etude");
-    var Bouton_perso = document.getElementById("Bouton_perso");
-    var projetEtudeElements = document.getElementsByClassName("Projet_Etude");
-    var projetPersoElements = document.getElementsByClassName("Projet_perso");
-    
- 
-    
+    const Bouton_etude = document.getElementById("Bouton_etude");
+    Bouton_perso = document.getElementById("Bouton_perso");
+    projetEtudeElements = document.getElementsByClassName("Projet_Etude");
+    const projetPersoElements = document.getElementsByClassName("Projet_perso");
+
+
     Bouton_perso.classList.remove("clicked");
     
 
-    for (var i = 0; i < projetEtudeElements.length; i++) {
+    for (i = 0; i < projetEtudeElements.length; i++) {
       projetEtudeElements[i].style.display = "block";
     }
     Bouton_etude.checked = false;
@@ -33,20 +35,20 @@ function APPUYER_BOUTON_PERSO(){
     Bouton_etude.classList.remove("clicked");
     
 
-    for (var i = 0; i < projetPersoElements.length; i++) {
+    for (i = 0; i < projetPersoElements.length; i++) {
       projetPersoElements[i].style.display = "block";
     }
   }
-  
-  var Bouton_perso = document.getElementById("Bouton_perso");
 
-  var projetEtudeElements = document.getElementsByClassName("Projet_Etude");
-  
+  Bouton_perso = document.getElementById("Bouton_perso");
+
+  projetEtudeElements = document.getElementsByClassName("Projet_Etude");
+
   if (Bouton_perso.classList.contains("clicked")) {
     Bouton_perso.classList.remove("clicked");
     
 
-    for (var i = 0; i < projetEtudeElements.length; i++) {
+    for (i = 0; i < projetEtudeElements.length; i++) {
       projetEtudeElements[i].style.display = "block";
     }
     Notif("Tous les projets");
@@ -54,7 +56,7 @@ function APPUYER_BOUTON_PERSO(){
     Bouton_perso.classList.add("clicked");
     
 
-    for (var i = 0; i < projetEtudeElements.length; i++) {
+    for (i = 0; i < projetEtudeElements.length; i++) {
       projetEtudeElements[i].style.display = "none";
   }
   Notif("Projets personnels");
@@ -63,11 +65,14 @@ function APPUYER_BOUTON_PERSO(){
 }
 
 function APPUYER_BOUTON_ETUDE(){
+  let i;
+  let projetPersoElements;
+  let Bouton_etude;
   if (document.getElementById("Bouton_perso").checked){
-    var Bouton_etude = document.getElementById("Bouton_etude");
-    var Bouton_perso = document.getElementById("Bouton_perso");
-    var projetEtudeElements = document.getElementsByClassName("Projet_Etude");
-    var projetPersoElements = document.getElementsByClassName("Projet_perso");
+    Bouton_etude = document.getElementById("Bouton_etude");
+    const Bouton_perso = document.getElementById("Bouton_perso");
+    const projetEtudeElements = document.getElementsByClassName("Projet_Etude");
+    projetPersoElements = document.getElementsByClassName("Projet_perso");
 
 
  
@@ -76,7 +81,7 @@ function APPUYER_BOUTON_ETUDE(){
     Bouton_perso.classList.remove("clicked");
     
 
-    for (var i = 0; i < projetEtudeElements.length; i++) {
+    for (i = 0; i < projetEtudeElements.length; i++) {
       projetEtudeElements[i].style.display = "block";
     }
     Bouton_perso.checked = false;
@@ -85,25 +90,22 @@ function APPUYER_BOUTON_ETUDE(){
     Bouton_etude.classList.remove("clicked");
     
 
-    for (var i = 0; i < projetPersoElements.length; i++) {
+    for (i = 0; i < projetPersoElements.length; i++) {
       projetPersoElements[i].style.display = "block";
     }
-  } 
-    
+  }
 
-  
-  var Bouton_etude = document.getElementById("Bouton_etude");
 
-  var projetPersoElements = document.getElementsByClassName("Projet_perso");
-  
-  
-  
+  Bouton_etude = document.getElementById("Bouton_etude");
+
+  projetPersoElements = document.getElementsByClassName("Projet_perso");
+
 
   if (Bouton_etude.classList.contains("clicked")) {
     Bouton_etude.classList.remove("clicked");
     
 
-    for (var i = 0; i < projetPersoElements.length; i++) {
+    for (i = 0; i < projetPersoElements.length; i++) {
       projetPersoElements[i].style.display = "block";
     }
     Notif("Tous les projets");
@@ -111,7 +113,7 @@ function APPUYER_BOUTON_ETUDE(){
     Bouton_etude.classList.add("clicked");
     
 
-    for (var i = 0; i < projetPersoElements.length; i++) {
+    for (i = 0; i < projetPersoElements.length; i++) {
       projetPersoElements[i].style.display = "none";
   }
   Notif("Projets de cours");
@@ -123,15 +125,15 @@ function APPUYER_BOUTON_ETUDE(){
 
 
 function MODAL(projectId) {
-  var modal = document.getElementById(projectId);
+  const modal = document.getElementById(projectId);
 
   function open_mod() {
     modal.classList.add('open');
   }
 
   // ferme la popup au clic sur la croix et le masque
-  var closeButton = modal.getElementsByClassName('close')[0];
-  var mask = modal.getElementsByClassName('mask')[0];
+  const closeButton = modal.getElementsByClassName('close')[0];
+  const mask = modal.getElementsByClassName('mask')[0];
 
 
   closeButton.addEventListener('click', function() {
@@ -188,7 +190,7 @@ function Notif(message){
   notification.innerText=message;
   ctn.appendChild(notification); 
    setTimeout(function(){
-      NotifCache.style.display="none";; 
+      NotifCache.style.display="none";
   }, 5000);
   setTimeout(function(){
     notification.remove();
