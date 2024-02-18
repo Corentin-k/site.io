@@ -46,3 +46,18 @@
             50% calc(50% - var(--z))/100% calc(2*var(--z)) repeat-y;
 
 }
+.title{
+    display: inline-flex;
+    background: none;
+
+}
+.title > * {
+    margin-right: 20px;
+}
+.fab{
+    text-decoration:  none;
+    color: lightgoldenrodyellow;
+}
+.title > a{
+    text-decoration: none;
+}
