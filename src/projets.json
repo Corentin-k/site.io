@@ -9,12 +9,12 @@
       "courteDescription": "Projet réalisé dans le cadre du cours de L1 \"Programmation en Python\" à EFREI",
       "github": "https://github.com/Corentin-k/Tetris",
       "image": {
-        "lien": "../img/tetris.png",
+        "lien": "img/tetris.png",
         "alt": "Tetris"
       },
       "longueDescription": "Le jeu consiste à placer des blocs dans une grille (carré, triangle ou losange) et créer des lignes ou des colonnes pour gagner des points. L'utilisateur doit choisir un mode de jeux parmi deux politiques, le plateau de jeu et le score s’il le souhaite. Cependant, cette version est moins évoluée que le jeu d’origine puisque les blocs ne tombent pas.",
       "imageLongueDescription": {
-        "lien": "../img/tetris_exemple.png",
+        "lien": "img/tetris_exemple.png",
         "alt": "Exemple de jeu Tetris"
       }
     },
@@ -27,12 +27,12 @@
       "courteDescription": "Jeu inspiré du jeu DoodleJump",
       "github": "https://github.com/Corentin-k/GigaJump",
       "image": {
-        "lien": "../img/LOGO_JEU.png",
+        "lien": "img/LOGO_JEU.png",
         "alt": "GigaJump"
       },
       "longueDescription": "Le jeu consiste à placer des blocs dans une grille (carré, triangle ou losange) et créer des lignes ou des colonnes pour gagner des points. L'utilisateur doit choisir un mode de jeu parmi deux politiques, le plateau de jeu et le score s’il le souhaite. Cependant, cette version est moins évoluée que le jeu d’origine puisque les blocs ne tombent pas.",
       "imageLongueDescription": {
-        "lien": "../img/GigaJump-exemple.png",
+        "lien": "img/GigaJump-exemple.png",
         "alt": "Exemple de jeu GigaJump"
       }
     },
@@ -44,12 +44,12 @@
       "githubPython": "https://github.com/Corentin-k/GigaJump",
       "githubTypeScript": "https://github.com/Corentin-k/Owl-Bot",
       "image": {
-        "lien": "../img/bot.png",
+        "lien": "img/bot.png",
         "alt": "Bot"
       },
       "longueDescription": "Bot Discord permettant d'afficher le planning d'une personne à partir d'un lien vers un calendrier iCalendar. Il existe deux versions du bot : une première en Python et une seconde en TypeScript, qui utilise Node.js. Le code utilisé pour le bot ts a été en partie fourni par Esteban Vincent et est disponible sur GitHub à l'adresse suivante : https://github.com/Crobot-ic/WebSite.",
       "imageLongueDescription": {
-        "lien": "../img/bot-exemple.png",
+        "lien": "img/bot-exemple.png",
         "alt": "Exemple du bot"
       }
     },
@@ -62,17 +62,17 @@
       "courteDescription": "Projet réalisé dans le cadre du cours \"Algorithme et structure de données\".",
       "github": "https://github.com/Corentin-k/Projet_dessin_vectoriel",
       "image": {
-        "lien": "../img/dessin_vectoriel.png",
+        "lien": "img/dessin_vectoriel.png",
         "alt": "Dessin Vectoriel"
       },
       "longueDescription": "Le but de ce projet est de développer un logiciel de dessin vectoriel fonctionnant à partir de la console. Il permet à l'utilisateur de créer des formes graphiques en saisissant des instructions spécifiques. Les formes disponibles incluent des cercles, des points, des lignes, des rectangles, des carrés et des polygones.",
       "imagesLongueDescription": [
         {
-          "lien": "../img/DV-exemple.png",
+          "lien": "img/DV-exemple.png",
           "alt": "Exemple de dessin vectoriel"
         },
         {
-          "lien": "../img/DV-démo.png",
+          "lien": "img/DV-démo.png",
           "alt": "Démo du dessin vectoriel"
         }
       ]
@@ -99,12 +99,12 @@
       "courteDescription": "Projet réalisé dans le cadre du cours \"Algorithme et structure de données 2\".",
       "github": "https://github.com/Corentin-k/Gestionnaire_Agenda",
       "image": {
-        "lien": "../img/agenda.png",
+        "lien": "img/agenda.png",
         "alt": "Gestionnaire Agenda"
       },
       "longueDescription": "Le but de ce projet est de développer un gestionnaire d'agenda en vue de découvrir les différentes structures en langage C : listes chaînées, listes à niveaux, etc.",
       "imagesLongueDescription": {
-        "lien": "../img/agenda-demo.png",
+        "lien": "img/agenda-demo.png",
         "alt": "Démo du gestionnaire d'agenda"
       }
     },
@@ -117,12 +117,12 @@
       "courteDescription": "Projet réalisé dans le cadre du cours \"Automates finis et expressions relationnelles\".",
       "github": "https://github.com/Corentin-k/Automate",
       "image": {
-        "lien": "../img/automate.png",
+        "lien": "img/automate.png",
         "alt": "Gestionnaire Automates finis"
       },
       "longueDescription": "Le but de ce projet est de développer un gestionnaire d'automates finis afin d'exploiter tous les définitions des automates : déterminisation, standardisation, minimisation.",
       "imagesLongueDescription": {
-        "lien": "../img/img_1.png",
+        "lien": "img/img_1.png",
         "alt": "Démo automate déterministe"
       }
     },
@@ -130,7 +130,7 @@
       "nom": "Mystère",
       "origine": "Projet personnel",
       "image": {
-        "lien": "../img/mystere.png",
+        "lien": "img/mystere.png",
         "alt": "Mystère"
       }
     }
