@@ -1,118 +1,112 @@
-
 :root {
-  --couleur_fond: rgb(9, 3, 65); 
+    --couleur_fond: rgb(19, 51, 155);
 }
+
 
 /* modifie l'arriere fond et la police de toute la page */
 
-
-::-webkit-scrollbar{
-  width:10px;
-  
+::-webkit-scrollbar {
+    width: 10px;
 }
+
 
 /* Track derriere de la scrollbar */
+
 ::-webkit-scrollbar-track {
-  
-  background: transparent;
+    background: transparent;
 }
 
+
 /* Handle */
+
 ::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background: #e60505;
+    border-radius: 10px;
+    background: #e60505;
 }
 
 
 /* Handle on hover */
+
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+    background: #555;
 }
 
+body {
+    display: grid;
+    background-color: var(--couleur_fond);
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    /* Cela garantit que la hauteur minimale du corps de la page est égale à la hauteur de la fenêtre visible. */
+}
 
-
-body{
-   display: grid;
-  background-color:var(--couleur_fond ) ;
-  grid-template-rows: auto 1fr auto ;
-  min-height: 100vh;
-  /* Cela garantit que la hauteur minimale du corps de la page est égale à la hauteur de la fenêtre visible. */
-  
-} 
-header{
+header {
     grid-row: 1;
     grid-template-rows: auto;
-    
     position: fixed;
     right: 0;
     left: 0;
     top: 0;
-    
-   
     text-align: center;
-    background-color:var(--couleur_fond ) ;
-    z-index: 800; /*placer le header le plus haut possible*/
+    background-color: var(--couleur_fond);
+    z-index: 800;
+    /*placer le header le plus haut possible*/
     color: red;
     font-style: oblique;
     font-size: 400%;
-    text-decoration:  underline;
+    text-decoration: underline;
     text-transform: capitalize;
-    text-shadow: 3px 2px 4px rgb(59, 33, 207); /* 1. décalage horizontal de l'ombre , 2 décalage vertical de l'ombre 3. l'adoucement du dégradé ou la propagation de l'ombre  4. couleur de l'ombre  */
+    text-shadow: 3px 2px 4px rgb(59, 33, 207);
+    /* 1. décalage horizontal de l'ombre , 2 décalage vertical de l'ombre 3. l'adoucement du dégradé ou la propagation de l'ombre  4. couleur de l'ombre  */
     padding-top: 10px
-
-   
 }
 
 .hidden {
-  display: none;
-} 
-.container {
-  grid-row: 2;
-  display: grid;
-  grid-template-columns: 15% 2fr;
-  grid-gap: 10px;    
-  margin-top: 5%;
-  margin-bottom: 10px;
-  position: relative;
+    display: none;
 }
+
+.container {
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 15% 2fr;
+    grid-gap: 10px;
+    margin-top: 5%;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+
 /*/////////////////////////////////////////////*/
 
 
-
-
-
 /*/////////////////////////////////////////////*/
-footer{
- 
-  grid-row: 3;
-  grid-column: 1/ span 2;;
-  display: flex;
+
+footer {
+    grid-row: 3;
+    grid-column: 1/ span 2;
+    ;
+    display: flex;
     align-items: center;
     justify-content: center;
     font-size: 20px;
     background-color: rgb(10, 127, 223);
-   
-    border-radius:30px;/*permet d'arrondir les bords*/
+    border-radius: 30px;
+    /*permet d'arrondir les bords*/
     height: 30px;
-
-  padding: 5px;
-  margin-top: 10px;
-  
- 
-   
+    padding: 5px;
+    margin-top: 10px;
 }
 
 
 /*/////////////////////////////////////////////*/
-.inutil{
-  padding:5% ;
-  grid-row: 2;
-  grid-column: 2;
-  justify-self: center; /* Centre horizontalement */
-  align-self: center; 
-  
 
+.inutil {
+    padding: 5%;
+    grid-row: 2;
+    grid-column: 2;
+    justify-self: center;
+    /* Centre horizontalement */
+    align-self: center;
 }
+
+
 /*/////////////////////////////////////////////*/
-
-

@@ -1,119 +1,115 @@
 /*///////////////////MENU//////////////////////////*/
-.menu{
+
+.menu {
     padding-top: 60px;
-      width: 150px;
-      position: fixed;
-      grid-column: 1;
-      
-  }
-  
-  /* Mode Sombre /clair */
-.switch{
-  width: 90px;
- height: 0;
-  background-color: black;
-  border-radius: 15px;
-  position: relative;
-  border: 1px solid rgb(241, 17, 17);
-  padding: 1rem;
-}
-.switch i{
-  position: absolute;
-  color: yellow;
-  top: 6px;
-  right: 23px;
-}
-.btn{
-  width: 30px;
-  height: 30px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 50%;
-  position: absolute;
-  top:1px;
-  left:1px;
+    width: 150px;
+    position: fixed;
+    grid-column: 1;
 }
 
 
+/* Mode Sombre /clair */
 
+.switch {
+    width: 90px;
+    height: 0;
+    background-color: black;
+    border-radius: 15px;
+    position: relative;
+    border: 1px solid rgb(241, 17, 17);
+    padding: 1rem;
+}
 
+.switch i {
+    position: absolute;
+    color: yellow;
+    top: 6px;
+    right: 23px;
+}
 
-.Contenu_Bouton{
-      width: 150px;
-      display: none;
-      grid-column: 1;
-      color: white;
-      padding-bottom: 10%;
-  }
+.btn {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+}
+
+.Contenu_Bouton {
+    width: 150px;
+    display: none;
+    grid-column: 1;
+    color: white;
+    padding-bottom: 10%;
+}
 
 .BoutonMenu {
-  /* https://uiverse.io/gagan-gv/massive-goat-19 */
-  display: block;
-  width: 150%;
-  height: 50px;
-  border: none;
-  font-size: 30px;
-  
-  padding: 0;
-  margin: 0;
- 
-  color: white;
-  
-  
-  }
-.BoutonQuitté{
-  display: none;
-  
+    /* https://uiverse.io/gagan-gv/massive-goat-19 */
+    display: block;
+    width: 150%;
+    height: 50px;
+    border: none;
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    color: white;
 }
 
-.BoutonMenu-cliqué{
-  display: none;
-}
-.BoutonQuitté-cliqué{
-  display: block;
+.BoutonQuitté {
+    display: none;
 }
 
-.contenu_Bouton-cliqué{
-display: block;
+.BoutonMenu-cliqué {
+    display: none;
 }
 
+.BoutonQuitté-cliqué {
+    display: block;
+}
+
+.contenu_Bouton-cliqué {
+    display: block;
+}
 
 .icon {
-  position: absolute;
-  height: 30px;
-  width: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    position: absolute;
+    height: 30px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-
-   
 .text {
-  transform: translateX(48px);
+    transform: translateX(48px);
+}
+
+.btn-change {
+    right: 0;
+    left: auto;
+}
+
+.icone-change {
+    left: 20px;
+}
+
+.body-change {
+    background-color: aquamarine;
+}
+
+.header-change {
+    background-color: aquamarine;
+}
+
+.BoutonMenu-change {
+    background-color: aquamarine;
+}
+
+.html-change {
+    border-color: aquamarine;
 }
 
 
-
-
-.btn-change{
-  right: 0;
-  left: auto;
-}
-.icone-change{
-  left: 20px;
-}  
-.body-change{
-  background-color: aquamarine;
-}
-.header-change{
-  background-color: aquamarine;
-}
-.BoutonMenu-change{
-  background-color: aquamarine;
-}
-.html-change{
-  border-color: aquamarine;
-}
-
-
-  /*/////////////////////////////////////////////*/
+/*/////////////////////////////////////////////*/

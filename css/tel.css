@@ -1,61 +1,114 @@
 @media screen and (max-width:1000px) {
- 
-    header{
-      
-      font-size: 500%;
-      
-     
-      padding-top: 5px;
-      
-     
-  }
-    
-  
+    header {
+        font-size: 500%;
+        padding-top: 5px;
+    }
     .Projet {
-    
-    grid-template-columns: repeat(1, auto);
-    grid-gap: 5px;
-    
-  
+        grid-template-columns: repeat(1, auto);
+        grid-gap: 5px;
     }
-    
     .flip-box {
-      
-      
-      width: 550px;
-      height: 350px;
-      
-     
-     
+        width: 450px;
+        height: 250px;
+        font-size: large;
     }
-    
-      .flip-box-back {
-       font-size: x-large;
-      }
-         
-      .modal .message_modal{
-        
-        color: green;
-       width:90% ;
-     
-      
+    .flip-box-back {
+        font-size: large;
     }
-    .modal .message_modal p{
-	
+    .modal .message_modal {
         color: green;
-      
-      
-      }
-    .Contenu_Bouton{
+        width: 90%;
+    }
+    .modal .message_modal p {
+        color: green;
+    }
+    .Contenu_Bouton {
         width: 250px;
         display: none;
         grid-column: 1;
         color: white;
         padding-bottom: 10%;
-        font-size: x-large;
+        font-size: large;
     }
-    .contenu_Bouton-cliqué{
+    .contenu_Bouton-cliqué {
         display: block;
-        }
-       
-  }
+    }
+}
+
+@media screen and (max-width:500px) {
+    header {
+        font-size: 300%;
+        padding-top: 5px;
+    }
+    .Projet {
+        grid-template-columns: repeat(1, auto);
+        grid-gap: 5px;
+    }
+    .flip-box {
+        width: 220px;
+        height: 170px;
+    }
+    .flip-box-back {
+        font-size: small;
+    }
+    .modal .message_modal {
+        color: green;
+        width: 90%;
+    }
+    .modal .message_modal p {
+        color: green;
+        font-size: large;
+    }
+    .modal .message_modal h2 {
+        font-size: xx-large;
+    }
+    .Contenu_Bouton {
+        width: 250px;
+        display: none;
+        grid-column: 1;
+        color: white;
+        padding-bottom: 10%;
+        font-size: 10px;
+    }
+    .contenu_Bouton-cliqué {
+        display: block;
+    }
+    .flip-box img {
+        width: 100%;
+        /* L'image s'ajuste à la largeur du conteneur */
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .switch {
+        width: 70px;
+        height: 3px;
+        background-color: black;
+        border-radius: 10px;
+        position: relative;
+        border: 1px solid rgb(241, 17, 17);
+        padding: 0.5rem;
+    }
+    .switch i {
+        position: absolute;
+        color: yellow;
+        top: 5px;
+        right: 10px;
+    }
+    .btn {
+        width: 5 px;
+        height: 17px;
+        background-color: rgb(236, 129, 7);
+        border-radius: 90%;
+        position: absolute;
+        top: 1px;
+        left: 1px;
+    }
+    .btn-change {
+        right: 0;
+        left: 50px;
+    }
+    .icone-change {
+        left: 10px;
+    }
+}

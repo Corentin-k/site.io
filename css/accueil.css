@@ -1,63 +1,64 @@
 .gallery {
-    --z: 20px;  /* contrôle le zig-zag */
-    --s: 930px; /* contrôle la taille */
-    --g: 2px;   /* contrôle l'espacement */
-
-    display: grid; /* définir l'affichage comme grille */
-    gap: var(--g); /* définir l'espacement entre les éléments de grille */
+    --z: 20px;
+    /* contrôle le zig-zag */
+    --s: 930px;
+    /* contrôle la taille */
+    --g: 2px;
+    /* contrôle l'espacement */
+    display: grid;
+    /* définir l'affichage comme grille */
+    gap: var(--g);
+    /* définir l'espacement entre les éléments de grille */
     clip-path: inset(1px);
     grid-auto-flow: column;
-
-
 }
-.gallery > img {
+
+.gallery>img {
     width: 0;
-    min-width: 100%; /* largeur minimale en fonction de la taille et du zig-zag */
-    height: var(--s); /* définir la hauteur */
+    min-width: 100%;
+    /* largeur minimale en fonction de la taille et du zig-zag */
+    height: var(--s);
+    /* définir la hauteur */
     object-fit: cover;
     -webkit-mask: var(--mask);
     mask: var(--mask);
-    cursor: pointer; /* changer le curseur au survol */
-    transition: .5s; /* ajouter une transition fluide */
+    cursor: pointer;
+    /* changer le curseur au survol */
+    transition: .5s;
+    /* ajouter une transition fluide */
 }
 
-
-
-.gallery > img:hover {
-    width: calc( var(--s)/2); /* ajuster la largeur au survol */
+.gallery>img:hover {
+    width: calc( var(--s)/2);
+    /* ajuster la largeur au survol */
 }
 
-.gallery > img:first-child {
-    place-self: start; /* aligner le premier élément au début */
-
-
-
-    --mask:
-            conic-gradient(from -135deg at right,#0000,#000 1deg 89deg,#0000 90deg)
-            50%/100% calc(2*var(--z)) repeat-y;
-
+.gallery>img:first-child {
+    place-self: start;
+    /* aligner le premier élément au début */
+    --mask: conic-gradient(from -135deg at right, #0000, #000 1deg 89deg, #0000 90deg) 50%/100% calc(2*var(--z)) repeat-y;
 }
 
-.gallery > img:last-child {
-    place-self: end; /* aligner le dernier élément à la fin */
-
-    --mask:
-            conic-gradient(from   45deg at left ,#0000,#000 1deg 89deg,#0000 90deg)
-            50% calc(50% - var(--z))/100% calc(2*var(--z)) repeat-y;
-
+.gallery>img:last-child {
+    place-self: end;
+    /* aligner le dernier élément à la fin */
+    --mask: conic-gradient(from 45deg at left, #0000, #000 1deg 89deg, #0000 90deg) 50% calc(50% - var(--z))/100% calc(2*var(--z)) repeat-y;
 }
-.title{
+
+.title {
     display: inline-flex;
     background: none;
-
 }
-.title > * {
+
+.title>* {
     margin-right: 20px;
 }
-.fab{
-    text-decoration:  none;
+
+.fab {
+    text-decoration: none;
     color: lightgoldenrodyellow;
 }
-.title > a{
+
+.title>a {
     text-decoration: none;
 }

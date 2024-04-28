@@ -1,9 +1,8 @@
-.NotifCache{
+.NotifCache {
     display: none;
 }
 
-
-.container-notifications{
+.container-notifications {
     display: block;
     position: fixed;
     bottom: 10vh;
@@ -11,10 +10,10 @@
     font-size: 1.2rem;
 }
 
-.toast{
+.toast {
     padding: 1rem;
     margin: 0.7rem;
-   color: green;
+    color: green;
     border: 1px solid rgb(181, 181, 181);
     border-left: 3px solid green;
 }
